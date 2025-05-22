@@ -5,51 +5,51 @@
 */
 
 // 링크 복사
-function copyLink(){
-	var url = 'https://comgongnuna.github.io/';
-	var textarea = document.createElement("textarea");
-	document.body.appendChild(textarea);
-	textarea.value = url;
-	textarea.select();
-	document.execCommand("copy");
-	document.body.removeChild(textarea);
-	alert("링크가 복사되었습니다. 널리널리 퍼뜨려주세요💕")
+function copyLink() {
+    var url = 'https://yeoluvseong.github.io/';
+    var textarea = document.createElement("textarea");
+    document.body.appendChild(textarea);
+    textarea.value = url;
+    textarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textarea);
+    alert("링크가 복사되었습니다. 널리널리 퍼뜨려주세요💕")
 }
 
 // 신부 계좌번호 복사
-function brideAccountNumber(){
-	var bride_account = '00000000 카카오뱅크';
-	var textarea = document.createElement("textarea");
-	document.body.appendChild(textarea);
-	textarea.value = bride_account;
-	textarea.select();
-	document.execCommand("copy");
-	document.body.removeChild(textarea);
-	alert("신부의 계좌번호가 복사되었습니다.\n00000000 카카오뱅크")
+function brideAccountNumber() {
+    var bride_account = '00000000 카카오뱅크';
+    var textarea = document.createElement("textarea");
+    document.body.appendChild(textarea);
+    textarea.value = bride_account;
+    textarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textarea);
+    alert("신부의 계좌번호가 복사되었습니다.\n00000000 카카오뱅크")
 }
 
 // 신랑 계좌번호 복사
-function groomAccountNumber(){
-	var groom_account = '00000000 카카오뱅크';
-	var textarea = document.createElement("textarea");
-	document.body.appendChild(textarea);
-	textarea.value = groom_account;
-	textarea.select();
-	document.execCommand("copy");
-	document.body.removeChild(textarea);
-	alert("신랑의 계좌번호가 복사되었습니다.\n00000000 카카오뱅크")
+function groomAccountNumber() {
+    var groom_account = '00000000 카카오뱅크';
+    var textarea = document.createElement("textarea");
+    document.body.appendChild(textarea);
+    textarea.value = groom_account;
+    textarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textarea);
+    alert("신랑의 계좌번호가 복사되었습니다.\n00000000 카카오뱅크")
 }
 
 // 아버님 계좌번호 복사 
-function groomsFatherAccountNumber(){
+function groomsFatherAccountNumber() {
     var grooms_father_account = '00000000 국민은행';
-	var textarea = document.createElement("textarea");
-	document.body.appendChild(textarea);
-	textarea.value = grooms_father_account;
-	textarea.select();
-	document.execCommand("copy");
-	document.body.removeChild(textarea);
-	alert("계좌번호가 복사되었습니다.\n00000000 국민은행")
+    var textarea = document.createElement("textarea");
+    document.body.appendChild(textarea);
+    textarea.value = grooms_father_account;
+    textarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textarea);
+    alert("계좌번호가 복사되었습니다.\n00000000 국민은행")
 }
 
 
@@ -62,22 +62,22 @@ function kakaoShare() {
     Kakao.Share.sendDefault({
         objectType: 'feed',
         content: {
-        title: '재윤🤍영석 결혼합니다.',
-        description: '2024.03.01\n11시 30분 빌라드지디 청담',
-        imageUrl: 'https://github.com/jaeyun95/jaeyun95.github.io/blob/main/assets/img/main.jpg?raw=true',
-        link: {
-            mobileWebUrl: 'https://comgongnuna.github.io/#!',
-            webUrl: 'https://comgongnuna.github.io/#!',
-        },
-        },
-        buttons: [
-        {
-            title: '모바일 청첩장 보기',
+            title: '창모🤍은숙 결혼합니다.',
+            description: '2025.08.23\n오후 3시 00분 KDW웨딩 마이더스홀',
+            imageUrl: 'https://google.com',
             link: {
-            mobileWebUrl: 'https://comgongnuna.github.io/#!',
-            webUrl: 'https://comgongnuna.github.io/#!',
+                mobileWebUrl: 'https://yeoluvseong.github.io/#!',
+                webUrl: 'https://yeoluvseong.github.io/#!',
             },
         },
+        buttons: [
+            {
+                title: '모바일 청첩장 보기',
+                link: {
+                    mobileWebUrl: 'https://yeoluvseong.github.io/#!',
+                    webUrl: 'https://yeoluvseong.github.io/#!',
+                },
+            },
         ],
         // 카카오톡 미설치 시 카카오톡 설치 경로이동
         installTalk: true,
