@@ -18,38 +18,62 @@ function copyLink() {
 
 // 신부 계좌번호 복사
 function brideAccountNumber() {
-    var bride_account = '00000000 카카오뱅크';
+    var bride_account = '96300558602010 기업은행';
     var textarea = document.createElement("textarea");
     document.body.appendChild(textarea);
     textarea.value = bride_account;
     textarea.select();
     document.execCommand("copy");
     document.body.removeChild(textarea);
-    alert("신부의 계좌번호가 복사되었습니다.\n00000000 카카오뱅크")
+    alert("신부의 계좌번호가 복사되었습니다.\n963-005586-02-010 기업은행 성은숙")
 }
 
 // 신랑 계좌번호 복사
 function groomAccountNumber() {
-    var groom_account = '00000000 카카오뱅크';
+    var groom_account = '110316095615 신한은행';
     var textarea = document.createElement("textarea");
     document.body.appendChild(textarea);
     textarea.value = groom_account;
     textarea.select();
     document.execCommand("copy");
     document.body.removeChild(textarea);
-    alert("신랑의 계좌번호가 복사되었습니다.\n00000000 카카오뱅크")
+    alert("신랑의 계좌번호가 복사되었습니다.\n110-316-095615 신한은행 여창모")
 }
 
-// 아버님 계좌번호 복사 
+// 아버지 계좌번호 복사 
 function groomsFatherAccountNumber() {
-    var grooms_father_account = '00000000 국민은행';
+    var grooms_father_account = '94712205013 농협';
     var textarea = document.createElement("textarea");
     document.body.appendChild(textarea);
     textarea.value = grooms_father_account;
     textarea.select();
     document.execCommand("copy");
     document.body.removeChild(textarea);
-    alert("계좌번호가 복사되었습니다.\n00000000 국민은행")
+    alert("계좌번호가 복사되었습니다.\n947-12-205013 농협 여태훈")
+}
+
+// 어머니 계좌번호 복사 
+function groomsMatherAccountNumber() {
+    var grooms_father_account = '94712205013 농협';
+    var textarea = document.createElement("textarea");
+    document.body.appendChild(textarea);
+    textarea.value = grooms_father_account;
+    textarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textarea);
+    alert("계좌번호가 복사되었습니다.\n947-12-205013 농협 여태훈")
+}
+
+// 장모님 계좌번호 복사 
+function bridesMatherAccountNumber() {
+    var grooms_father_account = '82108452229898 농협';
+    var textarea = document.createElement("textarea");
+    document.body.appendChild(textarea);
+    textarea.value = grooms_father_account;
+    textarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textarea);
+    alert("계좌번호가 복사되었습니다.\n821084-52-229898 농협 윤방임")
 }
 
 
@@ -66,16 +90,16 @@ function kakaoShare() {
             description: '2025.08.23\n오후 3시 00분 KDW웨딩 마이더스홀',
             imageUrl: 'https://google.com',
             link: {
-                mobileWebUrl: 'https://yeoluvseong.github.io/#!',
-                webUrl: 'https://yeoluvseong.github.io/#!',
+                mobileWebUrl: 'https://yeoluvseong.github.io/',
+                webUrl: 'https://yeoluvseong.github.io/',
             },
         },
         buttons: [
             {
                 title: '모바일 청첩장 보기',
                 link: {
-                    mobileWebUrl: 'https://yeoluvseong.github.io/#!',
-                    webUrl: 'https://yeoluvseong.github.io/#!',
+                    mobileWebUrl: 'https://yeoluvseong.github.io/',
+                    webUrl: 'https://yeoluvseong.github.io/',
                 },
             },
         ],
