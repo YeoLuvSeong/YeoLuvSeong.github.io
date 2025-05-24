@@ -155,3 +155,19 @@ function toggleFoldable3() {
         // 추가로 접힌 상태에서 수행할 동작 추가 가능
     }
 }
+
+const container = document.querySelector('.gallery_container');
+const prev = document.querySelector('.gallery_prev')
+const next = document.querySelector('.gallery_next')
+
+prev.addEventListener('gallery_click', () => {
+    const slides = document.querySelectorAll('.gallery_slide')
+
+    container.append(slides[0])
+})
+
+next.addEventListener('galley_click', () => {
+    const slides = document.querySelectorAll('.gallery_slide')
+
+    container.prepend(slides[slides.length - 1])
+})
