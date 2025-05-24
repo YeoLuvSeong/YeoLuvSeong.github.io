@@ -155,3 +155,52 @@ function toggleFoldable3() {
         // 추가로 접힌 상태에서 수행할 동작 추가 가능
     }
 }
+
+//for gallery
+const slider = document.querySelector(".slider");
+const slidesContainer = document.querySelector(".slides");
+const slides = document.querySelectorAll(".slide");
+const totalSlides = slides.length;
+
+let currentSlide = 1; // 첫 번째 진짜 슬라이드
+
+function updateSlide(animated = true) {
+    const width = slider.offsetWidth;
+
+    if (!animated) {
+        slidesContainer.style.transition = "none";
+    } else {
+        slidesContainer.style.transition = "transform 0.4s ease-in-out";
+    }
+
+    slidesContainer.style.transform = `translateX(-${currentSlide * width}px)`;
+
+    //  현재 이미지에 맞춰 슬라이더 높이 자동 조절
+    const currentImage = slides[currentSlide];
+    currentImage.onload = () => {
+        slider.style.height = currentImage.offsetHeight + "px";
+    };
+
+    // 혹시 로딩이 이미 끝났다면 강제 트리거
+    if (currentImage.complete) {
+        slider.style.height = currentImage.offsetHeight + "px";
+    }
+}
+
+function moveSlide(step) {
+    currentSlide += step;
+    updateSlide();
+
+    slidesContainer.addEventListener("transitionend", () => {
+        if (currentSlide === 0) {
+            currentSlide = totalSlides - 2;
+            updateSlide(false);
+        } else if (currentSlide === totalSlides - 1) {
+            currentSlide = 1;
+            updateSlide(false);
+        }
+    }, { once: true });
+}
+
+window.addEventListener("load", () => updateSlide(false));
+window.addEventListener("resize", () => updateSlide(false));

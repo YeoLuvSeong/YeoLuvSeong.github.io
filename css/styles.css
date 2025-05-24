@@ -12823,3 +12823,45 @@ a.no-style {
     transition: background-color 0.15s ease-in-out;
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
+
+/*gallery slide*/
+.slider {
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    background: #000; /* 남는 공간 대비용 */
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+    object-fit: contain; /*  이미지 전체 표시 */
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
