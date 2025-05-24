@@ -156,18 +156,51 @@ function toggleFoldable3() {
     }
 }
 
-const container = document.querySelector('.gallery_container');
-const prev = document.querySelector('.gallery_prev')
-const next = document.querySelector('.gallery_next')
+//for gallery
+const slider = document.querySelector(".slider");
+const slidesContainer = document.querySelector(".slides");
+const slides = document.querySelectorAll(".slide");
+const totalSlides = slides.length;
 
-prev.addEventListener('gallery_click', () => {
-    const slides = document.querySelectorAll('.gallery_slide')
+let currentSlide = 1; // 첫 번째 진짜 슬라이드
 
-    container.append(slides[0])
-})
+function updateSlide(animated = true) {
+    const width = slider.offsetWidth;
 
-next.addEventListener('galley_click', () => {
-    const slides = document.querySelectorAll('.gallery_slide')
+    if (!animated) {
+        slidesContainer.style.transition = "none";
+    } else {
+        slidesContainer.style.transition = "transform 0.4s ease-in-out";
+    }
 
-    container.prepend(slides[slides.length - 1])
-})
+    slidesContainer.style.transform = `translateX(-${currentSlide * width}px)`;
+
+    //  현재 이미지에 맞춰 슬라이더 높이 자동 조절
+    const currentImage = slides[currentSlide];
+    currentImage.onload = () => {
+        slider.style.height = currentImage.offsetHeight + "px";
+    };
+
+    // 혹시 로딩이 이미 끝났다면 강제 트리거
+    if (currentImage.complete) {
+        slider.style.height = currentImage.offsetHeight + "px";
+    }
+}
+
+function moveSlide(step) {
+    currentSlide += step;
+    updateSlide();
+
+    slidesContainer.addEventListener("transitionend", () => {
+        if (currentSlide === 0) {
+            currentSlide = totalSlides - 2;
+            updateSlide(false);
+        } else if (currentSlide === totalSlides - 1) {
+            currentSlide = 1;
+            updateSlide(false);
+        }
+    }, { once: true });
+}
+
+window.addEventListener("load", () => updateSlide(false));
+window.addEventListener("resize", () => updateSlide(false));
