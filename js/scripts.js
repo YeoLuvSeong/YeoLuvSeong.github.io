@@ -88,18 +88,18 @@ function kakaoShare() {
         content: {
             title: '창모🤍은숙 결혼합니다.',
             description: '2025.08.23\n오후 3시 00분 KDW웨딩 마이더스홀',
-            imageUrl: 'https://google.com',
+            imageUrl: 'https://github.com/YeoLuvSeong/YeoLuvSeong.github.io/blob/main/assets/img/headimage.jpg',
             link: {
-                mobileWebUrl: 'https://yeoluvseong.github.io/',
-                webUrl: 'https://yeoluvseong.github.io/',
+                mobileWebUrl: 'https://yeoluvseong.github.io/#!',
+                webUrl: 'https://yeoluvseong.github.io/#!',
             },
         },
         buttons: [
             {
                 title: '모바일 청첩장 보기',
                 link: {
-                    mobileWebUrl: 'https://yeoluvseong.github.io/',
-                    webUrl: 'https://yeoluvseong.github.io/',
+                    mobileWebUrl: 'https://yeoluvseong.github.io/#!',
+                    webUrl: 'https://yeoluvseong.github.io/#!',
                 },
             },
         ],
