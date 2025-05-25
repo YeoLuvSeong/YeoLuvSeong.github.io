@@ -79,7 +79,7 @@ function bridesMatherAccountNumber() {
 
 // 카카오톡 공유하기
 function kakaoShare() {
-    Kakao.init('YOUR APP KEY');
+    Kakao.init('9196c36819c3355272de20095112d36d');
     // SDK 초기화 여부를 판단합니다.
     Kakao.isInitialized();
     //console.log(Kakao.isInitialized());
