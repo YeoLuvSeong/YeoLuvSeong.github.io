@@ -13,7 +13,7 @@ function copyLink() {
     textarea.select();
     document.execCommand("copy");
     document.body.removeChild(textarea);
-    alert("링크가 복사되었습니다. 널리널리 퍼뜨려주세요💕")
+    alert("링크가 복사되었습니다.\n널리널리 퍼뜨려주세요💕")
 }
 
 // 신부 계좌번호 복사
