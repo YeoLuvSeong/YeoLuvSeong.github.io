@@ -54,14 +54,14 @@ function groomsFatherAccountNumber() {
 
 // 어머니 계좌번호 복사 
 function groomsMatherAccountNumber() {
-    var grooms_father_account = '94712205013 농협';
+    var grooms_father_account = '3333341729782 카카오뱅크';
     var textarea = document.createElement("textarea");
     document.body.appendChild(textarea);
     textarea.value = grooms_father_account;
     textarea.select();
     document.execCommand("copy");
     document.body.removeChild(textarea);
-    alert("계좌번호가 복사되었습니다.\n947-12-205013 농협 여태훈")
+    alert("계좌번호가 복사되었습니다.\n3333-34-1729782 이영자")
 }
 
 // 장모님 계좌번호 복사 
