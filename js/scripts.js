@@ -88,7 +88,7 @@ function kakaoShare() {
         content: {
             title: '창모🤍은숙 결혼합니다.',
             description: '2025.08.23.\n오후 3시 KDW웨딩 마이더스홀',
-            imageUrl: 'assets/img/main/ogimage.jpg',
+            imageUrl: 'https://yeoluvseong.github.io/assets/img/main/ogimage.jpg',
             link: {
                 mobileWebUrl: 'https://yeoluvseong.github.io/#!',
                 webUrl: 'https://yeoluvseong.github.io/#!',
@@ -153,19 +153,6 @@ function toggleFoldable3() {
         content.style.display = 'none';
         toggleIcon.innerText = '▼';
         // 추가로 접힌 상태에서 수행할 동작 추가 가능
-    }
-}
-
-function toggleFoldable4() {
-    var content = document.querySelector('.foldable-content4');
-    var toggleIcon = document.getElementById('toggleIcon4');
-
-    if (content.style.display === 'none') {
-        content.style.display = 'block';
-        toggleIcon.innerText = '▲';
-    } else {
-        content.style.display = 'none';
-        toggleIcon.innerText = '▼';
     }
 }
 
