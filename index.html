@@ -92,7 +92,7 @@
                             </a>&nbsp;&nbsp;&nbsp;
                         </li>
                     </ul>
-                    <div id="foldableSection">
+                    <!--<div id="foldableSection">
                         <p style="font-family: 'Noto Sans KR', sans-serif; font-size: 20px;" class="toggle-button" onclick="toggleFoldable()">
                             혼주 연락처보기
                             <span id="toggleIcon">▼</span>
@@ -123,7 +123,7 @@
                                 </a>&nbsp;&nbsp;&nbsp;
                             </p>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
                 <div class="col-lg-6 col-md-6 mb-5 mb-lg-0">
                     <p style="font-family: 'Noto Sans KR', sans-serif; font-size: 20px;">윤방임의 차녀</p>
@@ -142,7 +142,7 @@
                             </a>&nbsp;&nbsp;&nbsp;
                         </li>
                     </ul>
-                    <div id="foldableSection">
+                    <!--<div id="foldableSection">
                         <p style="font-family: 'Noto Sans KR', sans-serif; font-size: 20px;" class="toggle-button" onclick="toggleFoldable2()">
                             혼주 연락처보기
                             <span id="toggleIcon2">▼</span>
@@ -161,7 +161,7 @@
                                 </a>&nbsp;&nbsp;&nbsp;
                             </p>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>
@@ -219,7 +219,7 @@
                     <img class="map-icon" id="google-map" src="assets/img/map/google-map.png" alt="" />
                 </a>&nbsp;&nbsp;&nbsp;
             </div>
-            
+
             <div id="foldableSection">
                 <p style="font-family: 'Noto Sans KR', sans-serif; font-size: 16px;" class="toggle-button text-center" onclick="toggleFoldable3()">
                     오시는 길 안내
@@ -250,7 +250,6 @@
                     </p>
                 </div>
             </div>
-
             <!--<p style="font-family: 'Noto Sans KR', sans-serif; font-size: 18px;"><br>만드는거어렵다^^<br>만들기만들기💐<br></p>-->
         </div>
     </section>
@@ -274,21 +273,87 @@
                     </p>
                 </div>
             </div>
-            <div id="foldableSection">
-                <p style="font-family: 'Noto Sans KR', sans-serif; font-size: 16px;" class="toggle-button2" onclick="toggleFoldable4()">
-                    혼주 연락처보기
-                    <span id="toggleIcon4">▼</span>
-                </p>
-                    <p style="font-family: 'Noto Sans KR', sans-serif; font-size: 16px;">asdf</p>
+            <div class="row gx-4 gx-lg-5">
+
+                <div class="col-lg-6 col-md-6 mb-5 mb-lg-0">
+                    <div id="foldableSection">
+                        <p style="font-family: 'Noto Sans KR', sans-serif; font-size: 16px;" class="toggle-button2" onclick="toggleFoldable()">
+                            신랑측
+                            <span id="toggleIcon">▼</span>
+                        </p>
+                        <div class="foldable-content">
+                            <p style="font-family: 'Noto Sans KR', sans-serif; font-size: 16px;">
+                                여태훈&nbsp;&nbsp;&nbsp;
+                                <a href="tel:01079337080">
+                                    <i class="fa-solid fa-phone fa-sm"></i>
+                                </a>&nbsp;&nbsp;&nbsp;
+                                <a href="sms:01079337080">
+                                    <i class="fa-solid fa-envelope fa-sm"></i>
+                                </a>&nbsp;&nbsp;&nbsp;
+                                <a onclick="groomsFatherAccountNumber(); return false;" href="#!">
+                                    <i class="fa-solid fa-comments-dollar"></i>
+                                </a>&nbsp;&nbsp;&nbsp;
+                            </p>
+                            <p style="font-family: 'Noto Sans KR', sans-serif; font-size: 16px;">
+                                이영자&nbsp;&nbsp;&nbsp;
+                                <a href="tel:01022442420">
+                                    <i class="fa-solid fa-phone fa-sm"></i>
+                                </a>&nbsp;&nbsp;&nbsp;
+                                <a href="sms:01022442420">
+                                    <i class="fa-solid fa-envelope fa-sm"></i>
+                                </a>&nbsp;&nbsp;&nbsp;
+                                <a onclick="groomsMatherAccountNumber(); return false;" href="#!">
+                                    <i class="fa-solid fa-comments-dollar"></i>
+                                </a>&nbsp;&nbsp;&nbsp;
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 mb-5 mb-lg-0">
+                    <div id="foldableSection">
+                        <p style="font-family: 'Noto Sans KR', sans-serif; font-size: 16px;" class="toggle-button2" onclick="toggleFoldable2()">
+                            신부측
+                            <span id="toggleIcon2">▼</span>
+                        </p>
+                        <div class="foldable-content2">
+                            <p style="font-family: 'Noto Sans KR', sans-serif; font-size: 16px;">
+                                윤방임&nbsp;&nbsp;&nbsp;
+                                <a href="tel:01052170518">
+                                    <i class="fa-solid fa-phone fa-sm"></i>
+                                </a>&nbsp;&nbsp;&nbsp;
+                                <a href="sms:01052170518">
+                                    <i class="fa-solid fa-envelope fa-sm"></i>
+                                </a>&nbsp;&nbsp;&nbsp;
+                                <a onclick="bridesMatherAccountNumber(); return false;" href="#!">
+                                    <i class="fa-solid fa-comments-dollar"></i>
+                                </a>&nbsp;&nbsp;&nbsp;
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 참석 정보-->
+    <!-- 참석 정보 추가예정-->
     <div class="form-group">
 
     </div>
+
+    <!-- 감사의글, 사진 투명도 넣어서 수정예정-->
+    <section class="content-section bg-primary text-white">
+        <div class="container px-4 px-lg-5 text-center">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-10">
+                    <p style="font-family: 'Noto Sans KR', sans-serif; font-size: 18px;">
+                        저희의 새 출발과 행복을 응원해주시는<br> 
+                        모든 분들께 감사드립니다.<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer-->
     <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
