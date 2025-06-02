@@ -12607,7 +12607,7 @@ footer.footer {
     height: auto;
     padding-top: 0rem;
     padding-bottom: 14rem;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/headimage.jpg");
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/main/headimage.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
