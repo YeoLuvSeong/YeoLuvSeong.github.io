@@ -12817,18 +12817,6 @@ a.no-style {
     padding: 0; /* 내부 여백 제거 */
 }
 
-.social-link-honju {
-    display: block;
-    text-decoration: none;
-    height: 2rem;
-    width: 2rem;
-    line-height: 4.3rem;
-    font-size: 1.5rem;
-    background-color: #23252A;
-    transition: background-color 0.15s ease-in-out;
-    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
-}
-
 .thanks-section {
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -12861,7 +12849,7 @@ a.no-style {
     overflow: hidden;
     position: relative;
     margin: auto;
-    background: #000; /* 남는 공간 대비용 */
+    background: #fff; /* 남는 공간 대비용 */
 }
 
 .slides {
