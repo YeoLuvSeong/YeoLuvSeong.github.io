@@ -116,7 +116,7 @@ hr {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
     margin-top: 0;
     margin-bottom: 0.5rem;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 1.2;
 }
 
@@ -12806,7 +12806,6 @@ a.no-style {
     border: none; /* 버튼 스타일의 테두리 제거 */
     background: none; /* 배경 스타일 제거 */
     padding: 0; /* 내부 여백 제거 */
-    font-size: 16px; /* 원하는 글꼴 크기로 조절 */
 }
 
 .toggle-button-family {
@@ -12816,7 +12815,6 @@ a.no-style {
     border: none; /* 버튼 스타일의 테두리 제거 */
     background: none; /* 배경 스타일 제거 */
     padding: 0; /* 내부 여백 제거 */
-    font-size: 16px; /* 원하는 글꼴 크기로 조절 */
 }
 
 .social-link-honju {
