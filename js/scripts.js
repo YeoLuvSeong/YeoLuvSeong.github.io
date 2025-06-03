@@ -1,3 +1,30 @@
+
+function copyAccountNumber(account, message) {
+    const textarea = document.createElement("textarea");
+    document.body.appendChild(textarea);
+    textarea.value = account;
+    textarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textarea);
+    alert(message);
+}
+
+// 계좌번호 복사 함수
+function brideAccountNumber() {
+    copyAccountNumber('96300558602010 기업은행', '신부의 계좌번호가 복사되었습니다.\n963-005586-02-010 기업은행 성은숙');
+}
+function groomAccountNumber() {
+    copyAccountNumber('110316095615 신한은행', '신랑의 계좌번호가 복사되었습니다.\n110-316-095615 신한은행 여창모');
+}
+function groomsFatherAccountNumber() {
+    copyAccountNumber('94712205013 농협', '계좌번호가 복사되었습니다.\n947-12-205013 농협 여태훈');
+}
+function groomsMatherAccountNumber() {
+    copyAccountNumber('3333341729782 카카오뱅크', '계좌번호가 복사되었습니다.\n3333-34-1729782 이영자');
+}
+function bridesMatherAccountNumber() {
+    copyAccountNumber('82108452229898 농협', '계좌번호가 복사되었습니다.\n821084-52-229898 농협 윤방임');
+}
 /*!
 * Start Bootstrap - Stylish Portfolio v6.0.6 (https://startbootstrap.com/theme/stylish-portfolio)
 * Copyright 2013-2023 Start Bootstrap
@@ -108,9 +135,9 @@ function kakaoShare() {
     })
 }
 
-function toggleFoldable() {
-    var content = document.querySelector('.foldable-content');
-    var toggleIcon = document.getElementById('toggleIcon');
+function toggleFoldable_groomFamily() {
+    var content = document.querySelector('.foldable-content_groomFamily');
+    var toggleIcon = document.getElementById('toggleIcon_groomFamily');
 
     // 펼치기/접기 상태 변경
     if (content.style.display === 'none') {
@@ -124,9 +151,9 @@ function toggleFoldable() {
     }
 }
 
-function toggleFoldable2() {
-    var content = document.querySelector('.foldable-content2');
-    var toggleIcon = document.getElementById('toggleIcon2');
+function toggleFoldable_brideFamily() {
+    var content = document.querySelector('.foldable-content_brideFamily');
+    var toggleIcon = document.getElementById('toggleIcon_brideFamily');
 
     // 펼치기/접기 상태 변경
     if (content.style.display === 'none') {
@@ -140,9 +167,9 @@ function toggleFoldable2() {
     }
 }
 
-function toggleFoldable3() {
-    var content = document.querySelector('.foldable-content3');
-    var toggleIcon = document.getElementById('toggleIcon3');
+function toggleFoldable_coming() {
+    var content = document.querySelector('.foldable-content_coming');
+    var toggleIcon = document.getElementById('toggleIcon_coming');
 
     // 펼치기/접기 상태 변경
     if (content.style.display === 'none') {

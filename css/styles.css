@@ -12607,7 +12607,7 @@ footer.footer {
     height: auto;
     padding-top: 0rem;
     padding-bottom: 14rem;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/main/headimage.jpg");
+    background: url("../assets/img/main/headimage.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -12625,7 +12625,7 @@ footer.footer {
     }
 
         .masthead h1, .masthead .h1 {
-            font-size: 5.5rem;
+            font-size: 7rem;
         }
 }
 
@@ -12780,7 +12780,7 @@ footer.footer {
 }
 
 .map-icon {
-    width: 48px;
+    width: 40px;
     height: auto;
     margin-left: 5px;
     margin-right: 5px;
@@ -12792,21 +12792,14 @@ a.no-style {
 }
 
 /* 초기에 숨겨진 상태 */
-.foldable-content {
-    display: none;
-}
-
-/* 초기에 숨겨진 상태 */
-.foldable-content2 {
-    display: none;
-}
-
-.foldable-content4 {
+.foldable-content_coming,
+.foldable-content_brideFamily,
+.foldable-content_groomFamily {
     display: none;
 }
 
 /* 토글 버튼 스타일 */
-.toggle-button {
+.toggle-button_coming {
     cursor: pointer;
     color: white; /* 글씨색을 흰색으로 변경 */
     text-decoration: none; /* 밑줄 제거 */
@@ -12816,7 +12809,7 @@ a.no-style {
     font-size: 16px; /* 원하는 글꼴 크기로 조절 */
 }
 
-.toggle-button2 {
+.toggle-button_family {
     cursor: pointer;
     color: black; /* 글씨색을 검정으로 변경 */
     text-decoration: none; /* 밑줄 제거 */
@@ -12837,6 +12830,31 @@ a.no-style {
     transition: background-color 0.15s ease-in-out;
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
+
+.thanks-section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    position: relative;
+    overflow: hidden;
+}
+
+    .thanks-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('/assets/img/main/ring.jpg') center center / cover no-repeat;
+        opacity: 0.6; /* 원하는 배경 투명도 */
+        z-index: 0;
+    }
+
+    .thanks-section > .container {
+        position: relative;
+        z-index: 1; /* 텍스트를 배경 위로 */
+        color: black;
+    }
 
 /*gallery slide*/
 .slider {
@@ -12878,4 +12896,44 @@ a.no-style {
 
 .next {
     right: 10px;
+}
+
+.title-large {
+    font-family: 'Amatic SC', sans-serif;
+    color: black;
+    font-weight: 700;
+    font-size: 6vw; /* 뷰포트 너비의 6% */
+}
+
+.title-medium {
+    font-family: 'Amatic SC', sans-serif;
+    color: black;
+    font-weight: 700;
+    font-size: 6vw; /* 뷰포트 너비의 4% */
+}
+
+.info-text {
+    font-family: 'Nanum Pen Script', sans-serif;
+    color: black;
+    font-size: 4vw;
+}
+
+/* 너무 작거나 클 때 최소/최대 크기 지정 (선택사항) */
+@media (min-width: 768px) {
+    .title-large {
+        font-size: 40px;
+    }
+
+    .title-medium {
+        font-size: 40px;
+    }
+
+    .info-text {
+        font-size: 30px;
+    }
+}
+
+
+.nanum-script {
+    font-family: 'Nanum Pen Script', sans-serif;
 }
