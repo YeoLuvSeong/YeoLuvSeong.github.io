@@ -20,7 +20,7 @@ function groomsFatherAccountNumber() {
     copyAccountNumber('94712205013 농협', '계좌번호가 복사되었습니다.\n947-12-205013 농협 여태훈');
 }
 function groomsMatherAccountNumber() {
-    copyAccountNumber('3333341729782 카카오뱅크', '계좌번호가 복사되었습니다.\n3333-34-1729782 이영자');
+    copyAccountNumber('3333341729782 카카오뱅크', '계좌번호가 복사되었습니다.\n3333-34-1729782 카카오뱅크 이영자');
 }
 function bridesMatherAccountNumber() {
     copyAccountNumber('82108452229898 농협', '계좌번호가 복사되었습니다.\n821084-52-229898 농협 윤방임');
@@ -42,67 +42,6 @@ function copyLink() {
     document.body.removeChild(textarea);
     alert("링크가 복사되었습니다.\n널리널리 퍼뜨려주세요💕")
 }
-
-// 신부 계좌번호 복사
-function brideAccountNumber() {
-    var bride_account = '96300558602010 기업은행';
-    var textarea = document.createElement("textarea");
-    document.body.appendChild(textarea);
-    textarea.value = bride_account;
-    textarea.select();
-    document.execCommand("copy");
-    document.body.removeChild(textarea);
-    alert("신부의 계좌번호가 복사되었습니다.\n963-005586-02-010 기업은행 성은숙")
-}
-
-// 신랑 계좌번호 복사
-function groomAccountNumber() {
-    var groom_account = '110316095615 신한은행';
-    var textarea = document.createElement("textarea");
-    document.body.appendChild(textarea);
-    textarea.value = groom_account;
-    textarea.select();
-    document.execCommand("copy");
-    document.body.removeChild(textarea);
-    alert("신랑의 계좌번호가 복사되었습니다.\n110-316-095615 신한은행 여창모")
-}
-
-// 아버지 계좌번호 복사 
-function groomsFatherAccountNumber() {
-    var grooms_father_account = '94712205013 농협';
-    var textarea = document.createElement("textarea");
-    document.body.appendChild(textarea);
-    textarea.value = grooms_father_account;
-    textarea.select();
-    document.execCommand("copy");
-    document.body.removeChild(textarea);
-    alert("계좌번호가 복사되었습니다.\n947-12-205013 농협 여태훈")
-}
-
-// 어머니 계좌번호 복사 
-function groomsMatherAccountNumber() {
-    var grooms_father_account = '3333341729782 카카오뱅크';
-    var textarea = document.createElement("textarea");
-    document.body.appendChild(textarea);
-    textarea.value = grooms_father_account;
-    textarea.select();
-    document.execCommand("copy");
-    document.body.removeChild(textarea);
-    alert("계좌번호가 복사되었습니다.\n3333-34-1729782 이영자")
-}
-
-// 장모님 계좌번호 복사 
-function bridesMatherAccountNumber() {
-    var grooms_father_account = '82108452229898 농협';
-    var textarea = document.createElement("textarea");
-    document.body.appendChild(textarea);
-    textarea.value = grooms_father_account;
-    textarea.select();
-    document.execCommand("copy");
-    document.body.removeChild(textarea);
-    alert("계좌번호가 복사되었습니다.\n821084-52-229898 농협 윤방임")
-}
-
 
 // 카카오톡 공유하기
 function kakaoShare() {
