@@ -12792,14 +12792,14 @@ a.no-style {
 }
 
 /* 초기에 숨겨진 상태 */
-.foldable-content_coming,
-.foldable-content_brideFamily,
-.foldable-content_groomFamily {
+.foldable-content-coming,
+.foldable-content-brideFamily,
+.foldable-content-groomFamily {
     display: none;
 }
 
 /* 토글 버튼 스타일 */
-.toggle-button_coming {
+.toggle-button-coming {
     cursor: pointer;
     color: white; /* 글씨색을 흰색으로 변경 */
     text-decoration: none; /* 밑줄 제거 */
@@ -12809,7 +12809,7 @@ a.no-style {
     font-size: 16px; /* 원하는 글꼴 크기로 조절 */
 }
 
-.toggle-button_family {
+.toggle-button-family {
     cursor: pointer;
     color: black; /* 글씨색을 검정으로 변경 */
     text-decoration: none; /* 밑줄 제거 */

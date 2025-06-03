@@ -134,52 +134,14 @@ function kakaoShare() {
         installTalk: true,
     })
 }
+function toggleFoldableByClass(contentClass, iconId) {
+    const content = document.querySelector("." + contentClass);
+    const toggleIcon = document.getElementById(iconId);
 
-function toggleFoldable_groomFamily() {
-    var content = document.querySelector('.foldable-content_groomFamily');
-    var toggleIcon = document.getElementById('toggleIcon_groomFamily');
-
-    // 펼치기/접기 상태 변경
-    if (content.style.display === 'none') {
-        content.style.display = 'block';
-        toggleIcon.innerText = '▲';
-        // 추가로 펼쳐진 상태에서 수행할 동작 추가 가능
-    } else {
-        content.style.display = 'none';
-        toggleIcon.innerText = '▼';
-        // 추가로 접힌 상태에서 수행할 동작 추가 가능
-    }
-}
-
-function toggleFoldable_brideFamily() {
-    var content = document.querySelector('.foldable-content_brideFamily');
-    var toggleIcon = document.getElementById('toggleIcon_brideFamily');
-
-    // 펼치기/접기 상태 변경
-    if (content.style.display === 'none') {
-        content.style.display = 'block';
-        toggleIcon.innerText = '▲';
-        // 추가로 펼쳐진 상태에서 수행할 동작 추가 가능
-    } else {
-        content.style.display = 'none';
-        toggleIcon.innerText = '▼';
-        // 추가로 접힌 상태에서 수행할 동작 추가 가능
-    }
-}
-
-function toggleFoldable_coming() {
-    var content = document.querySelector('.foldable-content_coming');
-    var toggleIcon = document.getElementById('toggleIcon_coming');
-
-    // 펼치기/접기 상태 변경
-    if (content.style.display === 'none') {
-        content.style.display = 'block';
-        toggleIcon.innerText = '▲';
-        // 추가로 펼쳐진 상태에서 수행할 동작 추가 가능
-    } else {
-        content.style.display = 'none';
-        toggleIcon.innerText = '▼';
-        // 추가로 접힌 상태에서 수행할 동작 추가 가능
+    if (content && toggleIcon) {
+        const isHidden = content.style.display === "none" || content.style.display === "";
+        content.style.display = isHidden ? "block" : "none";
+        toggleIcon.innerText = isHidden ? "▲" : "▼";
     }
 }
 
