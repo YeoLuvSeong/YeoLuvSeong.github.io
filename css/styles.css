@@ -12888,20 +12888,20 @@ a.no-style {
     font-family: 'Amatic SC', sans-serif;
     color: black;
     font-weight: 700;
-    font-size: 6vw; /* 뷰포트 너비의 6% */
+    font-size: 7vw; /* 뷰포트 너비의 6% */
 }
 
 .title-medium {
     font-family: 'Amatic SC', sans-serif;
     color: black;
     font-weight: 700;
-    font-size: 6vw; /* 뷰포트 너비의 4% */
+    font-size: 7vw; /* 뷰포트 너비의 4% */
 }
 
-.info-text {
-    font-family: 'Nanum Pen Script', sans-serif;
+.title-small {
+    font-family: 'Cute Font', sans-serif;
     color: black;
-    font-size: 4vw;
+    font-size: 5vw;
 }
 
 /* 너무 작거나 클 때 최소/최대 크기 지정 (선택사항) */
