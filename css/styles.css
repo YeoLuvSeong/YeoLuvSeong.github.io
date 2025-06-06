@@ -12583,7 +12583,7 @@ footer.footer {
     }
 
 .map {
-    height: 30rem;
+    height: 40rem;
 }
 
     .map iframe {
@@ -12614,18 +12614,30 @@ footer.footer {
 }
 
     .masthead h1, .masthead .h1 {
-        font-size: 4rem;
-        margin: 0;
+        font-size: 2rem;
+        margin: 0.5rem;
+        padding: 0;
+    }
+
+    .masthead h2, .masthead .h2 {
+        font-size: 1.2rem;
+        margin: 0.5rem;
         padding: 0;
     }
 
 @media (min-width: 992px) {
     .masthead {
-        height: 100vh;
+        height: 140vh;
     }
 
         .masthead h1, .masthead .h1 {
-            font-size: 7rem;
+            font-size: 3rem;
+            margin: 1rem;
+        }
+
+        .masthead h2, .masthead .h2 {
+            font-size: 2.5rem;
+            margin-bottom: 8rem;
         }
 }
 
@@ -12888,20 +12900,20 @@ a.no-style {
     font-family: 'Amatic SC', sans-serif;
     color: black;
     font-weight: 700;
-    font-size: 7vw; /* 뷰포트 너비의 6% */
+    font-size: 5vw; /* 뷰포트 너비의 6% */
 }
 
 .title-medium {
     font-family: 'Amatic SC', sans-serif;
     color: black;
     font-weight: 700;
-    font-size: 7vw; /* 뷰포트 너비의 4% */
+    font-size: 6vw; /* 뷰포트 너비의 4% */
 }
 
 .title-small {
     font-family: 'Nanum Pen Script', sans-serif;
     color: black;
-    font-size: 5vw;
+    font-size: 4vw;
 }
 
 /* 너무 작거나 클 때 최소/최대 크기 지정 (선택사항) */
@@ -12930,4 +12942,8 @@ a.no-style {
 
 .singlefont-script {
     font-family: 'Single Day', cursive;
+}
+
+.gamzafont-script {
+    font-family: 'Gamja Flower', cursive;
 }
