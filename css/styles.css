@@ -663,6 +663,36 @@ progress {
     margin-left: auto;
 }
 
+    .container h1, .container .h1 {
+        font-size: 2rem;
+        margin: 0.5rem;
+        padding: 0;
+    }
+
+    .container h2, .container .h2 {
+        font-size: 1.8rem;
+        margin: 0.5rem;
+        padding: 0;
+    }
+
+    .container h3, .container .h3 {
+        font-size: 1.5rem;
+        margin: 0.5rem;
+        padding: 0;
+    }
+
+    .container h4, .container .h4 {
+        font-size: 1.2rem;
+        margin: 0.5rem;
+        padding: 0;
+    }
+
+    .container h5, .container .h5 {
+        font-size: 1rem;
+        margin: 0.5rem;
+        padding: 0;
+    }
+
 @media (min-width: 576px) {
     .container-sm, .container {
         max-width: 540px;
@@ -12417,14 +12447,35 @@ html {
     padding-bottom: 4rem;
 }
 
-.content-section-heading h2, .content-section-heading .h2 {
-    font-size: 3rem;
-}
+    .content-section h1, .content-section .h1 {
+        font-size: 2rem;
+        margin: 0.5rem;
+        padding: 0;
+    }
 
-.content-section-heading h3, .content-section-heading .h3 {
-    font-size: 1rem;
-    text-transform: uppercase;
-}
+    .content-section h2, .content-section .h2 {
+        font-size: 1.8rem;
+        margin: 0.5rem;
+        padding: 0;
+    }
+
+    .content-section h3, .content-section .h3 {
+        font-size: 1.5rem;
+        margin: 0.5rem;
+        padding: 0;
+    }
+
+    .content-section h4, .content-section .h4 {
+        font-size: 1.2rem;
+        margin: 0.5rem;
+        padding: 0;
+    }
+
+    .content-section h5, .content-section .h5 {
+        font-size: 1rem;
+        margin: 0.5rem;
+        padding: 0;
+    }
 
 .text-faded {
     color: rgba(255, 255, 255, 0.7);
@@ -12641,141 +12692,6 @@ footer.footer {
         }
 }
 
-.portfolio-item {
-    display: block;
-    position: relative;
-    overflow: hidden;
-    max-width: 530px;
-    margin: auto auto 1rem;
-}
-
-    .portfolio-item .caption {
-        display: flex;
-        height: 100%;
-        width: 100%;
-        background-color: rgba(33, 37, 41, 0.2);
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        z-index: 1;
-    }
-
-        .portfolio-item .caption .caption-content {
-            color: #fff;
-            margin: auto 2rem 2rem;
-        }
-
-            .portfolio-item .caption .caption-content h2, .portfolio-item .caption .caption-content .h2 {
-                font-size: 0.8rem;
-                text-transform: uppercase;
-            }
-
-            .portfolio-item .caption .caption-content p {
-                font-weight: 300;
-                font-size: 1.2rem;
-            }
-
-@media (min-width: 992px) {
-    .portfolio-item {
-        max-width: none;
-        margin: 0;
-    }
-
-        .portfolio-item .caption {
-            transition: background-color 0.7s, -webkit-clip-path 0.25s ease-out;
-            transition: clip-path 0.25s ease-out, background-color 0.7s;
-            transition: clip-path 0.25s ease-out, background-color 0.7s, -webkit-clip-path 0.25s ease-out;
-            -webkit-clip-path: inset(0px);
-            clip-path: inset(0px);
-        }
-
-            .portfolio-item .caption .caption-content {
-                transition: opacity 0.25s;
-                margin-left: 5rem;
-                margin-right: 5rem;
-                margin-bottom: 5rem;
-            }
-
-        .portfolio-item img {
-            transition: -webkit-clip-path 0.25s ease-out;
-            transition: clip-path 0.25s ease-out;
-            transition: clip-path 0.25s ease-out, -webkit-clip-path 0.25s ease-out;
-            -webkit-clip-path: inset(-1px);
-            clip-path: inset(-1px);
-        }
-
-        .portfolio-item:hover img {
-            -webkit-clip-path: inset(2rem);
-            clip-path: inset(2rem);
-        }
-
-        .portfolio-item:hover .caption {
-            background-color: rgba(29, 128, 159, 0.9);
-            -webkit-clip-path: inset(2rem);
-            clip-path: inset(2rem);
-        }
-}
-
-.service-icon {
-    background-color: #fff;
-    color: #1D809F;
-    height: 7rem;
-    width: 7rem;
-    display: block;
-    line-height: 7.5rem;
-    font-size: 2.25rem;
-    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
-}
-
-.customoverlay {
-    position: relative;
-    bottom: 85px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    border-bottom: 2px solid #ddd;
-    float: left;
-}
-
-    .customoverlay:nth-of-type(n) {
-        border: 0;
-        box-shadow: 0px 1px 2px #888;
-    }
-
-    .customoverlay a {
-        display: block;
-        text-decoration: none;
-        color: #000;
-        text-align: center;
-        border-radius: 6px;
-        font-size: 14px;
-        font-weight: bold;
-        overflow: hidden;
-        background: #d95050;
-        background: #d95050 url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png) no-repeat right 14px center;
-    }
-
-    .customoverlay .title {
-        display: block;
-        text-align: center;
-        background: #fff;
-        margin-right: 35px;
-        padding: 10px 15px;
-        font-size: 14px;
-        font-weight: bold;
-    }
-
-    .customoverlay:after {
-        content: '';
-        position: absolute;
-        margin-left: -12px;
-        left: 50%;
-        bottom: -12px;
-        width: 22px;
-        height: 12px;
-        background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')
-    }
-
-
 .col-12 img {
     cursor: pointer;
     margin-bottom: 1rem;
@@ -12835,6 +12751,10 @@ a.no-style {
     position: relative;
     overflow: hidden;
 }
+
+    .thanks-section h1, .thanks-section .h1 {
+        font-size: 1.5rem;
+    }
 
     .thanks-section::before {
         content: "";
