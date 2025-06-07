@@ -661,6 +661,7 @@ progress {
     padding-left: calc(var(--bs-gutter-x) * 0.5);
     margin-right: auto;
     margin-left: auto;
+    word-break: keep-all;
 }
 
     .container h1, .container .h1 {
@@ -12445,6 +12446,7 @@ html {
 .content-section {
     padding-top: 4rem;
     padding-bottom: 4rem;
+    word-break: keep-all;
 }
 
     .content-section h1, .content-section .h1 {
@@ -12476,6 +12478,44 @@ html {
         margin: 0.5rem;
         padding: 0;
     }
+
+@media (min-width: 992px) {
+    .content-section {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        word-break: keep-all;
+    }
+
+        .content-section h1, .content-section .h1 {
+            font-size: 3rem;
+            margin: 0.5rem;
+            padding: 0;
+        }
+
+        .content-section h2, .content-section .h2 {
+            font-size: 3.3rem;
+            margin: 0.5rem;
+            padding: 0;
+        }
+
+        .content-section h3, .content-section .h3 {
+            font-size: 3rem;
+            margin: 0.5rem;
+            padding: 0;
+        }
+
+        .content-section h4, .content-section .h4 {
+            font-size: 2.7rem;
+            margin: 0.5rem;
+            padding: 0;
+        }
+
+        .content-section h5, .content-section .h5 {
+            font-size: 2.4rem;
+            margin: 0.5rem;
+            padding: 0;
+        }
+}
 
 .text-faded {
     color: rgba(255, 255, 255, 0.7);
@@ -12714,6 +12754,15 @@ footer.footer {
     margin-right: 5px;
 }
 
+@media (min-width: 992px) {
+    .map-icon {
+        width: 80px;
+        height: auto;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
 a.no-style {
     text-decoration: none; /* 밑줄 제거 */
     color: inherit; /* 기본 색상으로 설정 */
@@ -12750,10 +12799,11 @@ a.no-style {
     padding-bottom: 4rem;
     position: relative;
     overflow: hidden;
+    word-break: keep-all;
 }
 
     .thanks-section h1, .thanks-section .h1 {
-        font-size: 1.5rem;
+        font-size: 5vw;
     }
 
     .thanks-section::before {
@@ -12773,6 +12823,24 @@ a.no-style {
         z-index: 1; /* 텍스트를 배경 위로 */
         color: black;
     }
+
+@media (min-width: 992px) {
+    .thanks-section {
+        height: 60vh;
+        /*padding-top: 1rem;*/
+        /*padding-bottom: 1rem;*/
+        display: flex;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        word-break: keep-all;
+    }
+
+        .thanks-section h1, .thanks-section .h1 {
+            font-size: 2rem;
+            margin: 1rem;
+        }
+}
 
 /*gallery slide*/
 .slider {
