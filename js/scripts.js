@@ -53,7 +53,7 @@ function kakaoShare() {
         objectType: 'feed',
         content: {
             title: '창모🤍은숙 결혼합니다.',
-            description: '2025.08.23.\n오후 3시 KDW웨딩 마이더스홀',
+            description: '2025.08.23. 오후 3시\nKDW웨딩 마이더스홀',
             imageUrl: 'https://yeoluvseong.github.io/assets/img/main/ogimage.jpg',
             link: {
                 mobileWebUrl: 'https://yeoluvseong.github.io/#!',
