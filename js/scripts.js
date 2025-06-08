@@ -56,16 +56,16 @@ function kakaoShare() {
             description: '2025.08.23. 오후 3시\nKDW웨딩 마이더스홀',
             imageUrl: 'https://yeoluvseong.github.io/assets/img/main/ogimage.jpg',
             link: {
-                mobileWebUrl: 'https://yeoluvseong.github.io/#!',
-                webUrl: 'https://yeoluvseong.github.io/#!',
+                mobileWebUrl: 'https://yeoluvseong.github.io/',
+                webUrl: 'https://yeoluvseong.github.io/',
             },
         },
         buttons: [
             {
                 title: '모바일 청첩장 보기',
                 link: {
-                    mobileWebUrl: 'https://yeoluvseong.github.io/#!',
-                    webUrl: 'https://yeoluvseong.github.io/#!',
+                    mobileWebUrl: 'https://yeoluvseong.github.io/',
+                    webUrl: 'https://yeoluvseong.github.io/',
                 },
             },
         ],
