@@ -12935,3 +12935,7 @@ a.no-style {
 .gamzafont-script {
     font-family: 'Gamja Flower', sans-serif;
 }
+
+.icon-middle {
+    vertical-align: middle;
+}
