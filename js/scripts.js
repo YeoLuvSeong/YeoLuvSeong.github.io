@@ -84,6 +84,55 @@ function toggleFoldableByClass(contentClass, iconId) {
     }
 }
 
+// 디데이 계산 함수 (정수 일수 반환)
+function calculateRemainingDays(targetDateStr) {
+    const targetDate = new Date(targetDateStr);
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    targetDate.setHours(0, 0, 0, 0);
+
+    return Math.floor((targetDate - today) / (1000 * 60 * 60 * 24));
+}
+
+// 출력용 메시지 생성 함수
+function calculateRemainingDays(targetDateStr) {
+    const targetDate = new Date(targetDateStr);
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    targetDate.setHours(0, 0, 0, 0);
+    return Math.floor((targetDate - today) / (1000 * 60 * 60 * 24));
+}
+
+function printDdayMessage(targetDateStr, elementId) {
+    const daysLeft = calculateRemainingDays(targetDateStr);
+    let message = ``;
+
+    if (isNaN(daysLeft)) {
+        message = `잘못된 날짜입니다.`;
+    } else if (daysLeft >= 10) {
+        message = `설레는 마음으로, <br>인생의 가장 찬란한 날을 준비중이에요. <br>💍D-${daysLeft}`
+    } else if (daysLeft > 1 && daysLeft < 10) {
+        message = `꽃보다 예쁜 하루를 기다리며... <br>💐D-${daysLeft}`;
+    } else if (daysLeft = 1) {
+        message = `사랑의 약속까지 단 하루 남았습니다! 🙏`;
+    } else if (daysLeft === 0) {
+        message = `오늘은 두 사람이 하나 되는 날입니다! 👰❤️🤵`;
+    } else {
+        message = `함께해주셔서 진심으로 감사드립니다. <br>따뜻한 마음 오래 기억할게요.💑`;
+    }
+
+    const el = document.getElementById(elementId);
+    if (el) el.innerHTML = message;
+}
+
+// ✅ JS 파일 내에서 자동 실행되도록 처리
+// 단, HTML 요소가 로드된 이후에 실행되도록 defer 방식 보장
+document.addEventListener('DOMContentLoaded', function () {
+    printDdayMessage('2025-08-23', 'DdayResult');
+});
+
+
+
 //for gallery
 const slider = document.querySelector(".slider");
 const slidesContainer = document.querySelector(".slides");
