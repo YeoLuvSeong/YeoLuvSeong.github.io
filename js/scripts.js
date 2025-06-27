@@ -45,10 +45,9 @@ function copyLink() {
 
 // 카카오톡 공유하기
 function kakaoShare() {
-    Kakao.init('9196c36819c3355272de20095112d36d');
-    // SDK 초기화 여부를 판단합니다.
-    Kakao.isInitialized();
-    //console.log(Kakao.isInitialized());
+    if (!window.Kakao.isInitialized()) {
+        Kakao.init('9196c36819c3355272de20095112d36d');
+    }
     Kakao.Share.sendDefault({
         objectType: 'feed',
         content: {
@@ -91,15 +90,6 @@ function calculateRemainingDays(targetDateStr) {
     today.setHours(0, 0, 0, 0);
     targetDate.setHours(0, 0, 0, 0);
 
-    return Math.floor((targetDate - today) / (1000 * 60 * 60 * 24));
-}
-
-// 출력용 메시지 생성 함수
-function calculateRemainingDays(targetDateStr) {
-    const targetDate = new Date(targetDateStr);
-    const today = new Date();
-    today.setHours(0, 0, 0, 0);
-    targetDate.setHours(0, 0, 0, 0);
     return Math.floor((targetDate - today) / (1000 * 60 * 60 * 24));
 }
 
