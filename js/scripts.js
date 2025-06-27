@@ -100,15 +100,15 @@ function printDdayMessage(targetDateStr, elementId) {
     if (isNaN(daysLeft)) {
         message = `잘못된 날짜입니다.`;
     } else if (daysLeft >= 10) {
-        message = `설레는 마음으로 <br>인생의 가장 찬란한 날을 준비 중이에요. <br>💍D-${daysLeft}`
+        message = `설레는 마음으로<br>인생의 가장 찬란한 날을 준비 중이에요.<br>💍D-${daysLeft}`
     } else if (daysLeft > 1 && daysLeft < 10) {
-        message = `꽃보다 예쁜 하루를 기다리며... <br>💐D-${daysLeft}`;
+        message = `꽃보다 예쁜 하루를 기다리며...<br>💐D-${daysLeft}`;
     } else if (daysLeft = 1) {
         message = `사랑의 약속까지 단 하루 남았습니다! 🙏`;
     } else if (daysLeft === 0) {
         message = `오늘은 두 사람이 하나 되는 날입니다! 👰❤️🤵`;
     } else {
-        message = `함께해주셔서 진심으로 감사드립니다. <br>따뜻한 마음 오래 기억할게요.💑`;
+        message = `함께해주셔서 진심으로 감사드립니다.<br>따뜻한 마음 오래 기억할게요.💑`;
     }
 
     const el = document.getElementById(elementId);
