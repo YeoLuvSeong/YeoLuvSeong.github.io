@@ -43,7 +43,7 @@
     --bs-light: #f8f9fa;
     --bs-dark: #212529;
     /* here 29, 128, 159; */
-    --bs-primary-rgb: 252, 158, 170;
+    --bs-primary-rgb: 255, 204, 204 /*255, 204, 204*/;
     --bs-secondary-rgb: 236, 184, 7;
     --bs-success-rgb: 25, 135, 84;
     --bs-info-rgb: 13, 202, 240;
@@ -7454,7 +7454,7 @@ textarea.form-control-lg {
 
 .text-bg-primary {
     color: #fff !important;
-    background-color: RGBA(29, 128, 159, var(--bs-bg-opacity, 1)) !important;
+    background-color: RGBA(29, 155, 159, var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-secondary {
@@ -12493,25 +12493,25 @@ html {
         }
 
         .content-section h2, .content-section .h2 {
-            font-size: 3.3rem;
-            margin: 0.5rem;
-            padding: 0;
-        }
-
-        .content-section h3, .content-section .h3 {
-            font-size: 3rem;
-            margin: 0.5rem;
-            padding: 0;
-        }
-
-        .content-section h4, .content-section .h4 {
             font-size: 2.7rem;
             margin: 0.5rem;
             padding: 0;
         }
 
-        .content-section h5, .content-section .h5 {
+        .content-section h3, .content-section .h3 {
             font-size: 2.4rem;
+            margin: 0.5rem;
+            padding: 0;
+        }
+
+        .content-section h4, .content-section .h4 {
+            font-size: 2.1rem;
+            margin: 0.5rem;
+            padding: 0;
+        }
+
+        .content-section h5, .content-section .h5 {
+            font-size: 1.8rem;
             margin: 0.5rem;
             padding: 0;
         }
