@@ -100,7 +100,7 @@ function printDdayMessage(targetDateStr, elementId) {
     if (isNaN(daysLeft)) {
         message = `잘못된 날짜입니다.`;
     } else if (daysLeft >= 10) {
-        message = `설레는 마음으로, <br>인생의 가장 찬란한 날을 준비중이에요. <br>💍D-${daysLeft}`
+        message = `설레는 마음으로 <br>인생의 가장 찬란한 날을 준비 중이에요. <br>💍D-${daysLeft}`
     } else if (daysLeft > 1 && daysLeft < 10) {
         message = `꽃보다 예쁜 하루를 기다리며... <br>💐D-${daysLeft}`;
     } else if (daysLeft = 1) {
