@@ -136,10 +136,21 @@
         </h3>
         <br />
         <div class="container px-1 px-lg-0">
-            <div class="my-3">
-                <iframe allowfullscreen="" frameborder="0" height="400" width="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.8515202911794!2d127.13116507560184!3d37.53499722593655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357caffdaaae9d6f%3A0x3eff65cfb6232890!2zS0RX7Juo65Sp!5e0!3m2!1sko!2skr!4v1747750762153!5m2!1sko!2skr" style="border:0">
-                </iframe>
-            </div>
+            <!--구글지도-->
+            <!--<div class="my-3">
+            <iframe allowfullscreen="" frameborder="0" height="400" width="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.8515202911794!2d127.13116507560184!3d37.53499722593655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357caffdaaae9d6f%3A0x3eff65cfb6232890!2zS0RX7Juo65Sp!5e0!3m2!1sko!2skr!4v1747750762153!5m2!1sko!2skr" style="border:0">
+            </iframe>
+            </div>-->
+            <!--카카오지도-->
+            <div id="daumRoughmapContainer1751084341738" class="root_daum_roughmap root_daum_roughmap_landing" style="width:100%"></div>
+            <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+            <script charset="UTF-8">
+                new daum.roughmap.Lander({
+                    "timestamp": "1751084341738",
+                    "key": "4brcfygykie",
+                    "mapHeight": "400"
+                }).render();
+            </script>
             <div class="my-3 text-center">
                 <a class="text-decoration-none" href="https://naver.me/FPn5kMTA">
                     <img alt="" class="map-icon" id="naver-map" src="assets/img/map/naver-map.png" />
@@ -190,11 +201,13 @@
                         <span style="display: block; padding-left: 2.5em;">부산 동래구 안남로 23, 보림프라자 앞</span>
                         <span style="display: block; padding-left: 0.5em; text-indent: -0.5em;">-경유: 당일 오전 08:10</span>
                         <span style="display: block; padding-left: 2.5em;">부산 1호선 동래역 3번 출구, 공영주차장 방향</span>
-                        <span style="display: block; padding-left: 0.5em; text-indent: -0.5em;">-연락처: 여호현 (혼주대리)&nbsp;&nbsp;Tel.) 
-                        <a class="text-decoration-none" href="tel:01094375070">
-                            <i class="fa-solid fa-phone fa-sm text-dark" style="vertical-align: middle;"></i>
-                        </a></span>
-                        </h4>
+                        <span style="display: block; padding-left: 0.5em; text-indent: -0.5em;">
+                            -연락처: 여호현 (혼주대리)&nbsp;&nbsp;Tel.)
+                            <a class="text-decoration-none" href="tel:01094375070">
+                                <i class="fa-solid fa-phone fa-sm text-dark" style="vertical-align: middle;"></i>
+                            </a>
+                        </span>
+                    </h4>
                     <h5 class="gamzafont-script">
                         <span style="display: block; padding-left: 1em; text-indent: -1em;">※ 경유지에서는 차량 대기가 어려우니 양해 부탁드립니다.</span>
                     </h5>
