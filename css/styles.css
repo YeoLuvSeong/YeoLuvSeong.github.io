@@ -12748,7 +12748,7 @@ footer.footer {
 }
 
 .map-icon {
-    width: 40px;
+    width: 50px;
     height: auto;
     margin-left: 5px;
     margin-right: 5px;
@@ -12756,7 +12756,7 @@ footer.footer {
 
 @media (min-width: 992px) {
     .map-icon {
-        width: 80px;
+        width: 100px;
         height: auto;
         margin-left: 5px;
         margin-right: 5px;
