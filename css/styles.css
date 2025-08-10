@@ -12923,6 +12923,9 @@ a.no-style {
     }
 }
 
+.notosans-script {
+    font-family: 'Noto Sans KR', sans-serif;
+}
 
 .nanumfont-script {
     font-family: 'Nanum Pen Script', sans-serif;
