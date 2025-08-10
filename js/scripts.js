@@ -17,13 +17,13 @@ function groomAccountNumber() {
     copyAccountNumber('110316095615 신한은행', '신랑의 계좌번호가 복사되었습니다.\n110-316-095615 신한은행 여창모');
 }
 function groomsFatherAccountNumber() {
-    copyAccountNumber('94712205013 농협', '계좌번호가 복사되었습니다.\n947-12-205013 농협 여태훈');
+    copyAccountNumber('94712205013 농협', '신랑 아버지의 계좌번호가 복사되었습니다.\n947-12-205013 농협 여태훈');
 }
 function groomsMatherAccountNumber() {
-    copyAccountNumber('3333341729782 카카오뱅크', '계좌번호가 복사되었습니다.\n3333-34-1729782 카카오뱅크 이영자');
+    copyAccountNumber('3333341729782 카카오뱅크', '신랑 어머니의 계좌번호가 복사되었습니다.\n3333-34-1729782 카카오뱅크 이영자');
 }
 function bridesMatherAccountNumber() {
-    copyAccountNumber('82108452229898 농협', '계좌번호가 복사되었습니다.\n821084-52-229898 농협 윤방임');
+    copyAccountNumber('82108452229898 농협', '신부 어머니의 계좌번호가 복사되었습니다.\n821084-52-229898 농협 윤방임');
 }
 /*!
 * Start Bootstrap - Stylish Portfolio v6.0.6 (https://startbootstrap.com/theme/stylish-portfolio)
